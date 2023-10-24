@@ -66,4 +66,3 @@ function App() {
 export default App;
 
 
-// ^18.2.0

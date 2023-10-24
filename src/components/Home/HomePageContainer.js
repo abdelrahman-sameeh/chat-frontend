@@ -61,7 +61,7 @@ const HomePageContainer = () => {
           </div>
 
           <div className="people position-relative">
-            {friendLoading&&friendIsPress? <LoadingIn /> : null}
+            {!friendLoading&&!friendIsPress? <LoadingIn /> : null}
             {friends && friends.length && userChatId ? (
               friends.map((item) => {
                 let friendChatId = userChatId[item._id];
